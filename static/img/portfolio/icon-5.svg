@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.313 50.508">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icon" transform="translate(0.5 0.5)">
+    <path id="Path_144" data-name="Path 144" class="cls-1" d="M443.994,1976.677v-49.508h15.686v34.8h18.627v14.705Z" transform="translate(-443.994 -1927.168)"/>
+    <line id="Line_17" data-name="Line 17" class="cls-2" x2="9" transform="translate(6.506 4.332)"/>
+    <line id="Line_18" data-name="Line 18" class="cls-2" x2="9" transform="translate(6.506 14.332)"/>
+    <line id="Line_19" data-name="Line 19" class="cls-2" x2="9" transform="translate(6.506 24.332)"/>
+    <line id="Line_20" data-name="Line 20" class="cls-2" x2="9" transform="translate(6.506 34.332)"/>
+    <line id="Line_21" data-name="Line 21" class="cls-2" x2="4" transform="translate(11.506 29.332)"/>
+    <line id="Line_22" data-name="Line 22" class="cls-2" x2="4" transform="translate(11.506 19.332)"/>
+    <line id="Line_23" data-name="Line 23" class="cls-2" x2="4" transform="translate(11.506 9.332)"/>
+    <line id="Line_24" data-name="Line 24" class="cls-2" x2="9" transform="translate(16.006 34.832) rotate(90)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-2" x2="4" transform="translate(20.506 35.332) rotate(90)"/>
+    <line id="Line_26" data-name="Line 26" class="cls-2" x2="9" transform="translate(26.006 34.832) rotate(90)"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(5.006 37.832)">
+      <circle class="cls-4" cx="3.5" cy="3.5" r="3.5"/>
+      <circle class="cls-5" cx="3.5" cy="3.5" r="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.987 51.349">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #00a4db;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icons" transform="translate(0.5 0.5)">
+    <path id="Path_132" data-name="Path 132" class="cls-1" d="M443,1989h0l.467-50.349h39.446v40.316h-9.281V1989H443.519" transform="translate(-443 -1938.651)"/>
+    <path id="Path_133" data-name="Path 133" class="cls-2" d="M473.5,1989l9.627-10.006" transform="translate(-443 -1938.651)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(7 7.349)">
+      <circle class="cls-4" cx="10" cy="10" r="10"/>
+      <circle class="cls-5" cx="10" cy="10" r="9.5"/>
+    </g>
+    <line id="Line_15" data-name="Line 15" class="cls-3" x2="6" y2="8" transform="translate(23.5 24.849)"/>
+    <path id="Path_134" data-name="Path 134" class="cls-3" d="M454.3,1951.906H460.5" transform="translate(-443.803 -1939.057)"/>
+    <path id="Path_143" data-name="Path 143" class="cls-3" d="M959.491,1934.835h2.723" transform="translate(-940.991 -1921.986)"/>
+    <path id="Path_139" data-name="Path 139" class="cls-3" d="M964.264,1934.734l7.413.1" transform="translate(-948.764 -1919.885)"/>
+    <path id="Path_141" data-name="Path 141" class="cls-3" d="M959.491,1934.835h3.554" transform="translate(-948.991 -1919.986)"/>
+    <path id="Path_140" data-name="Path 140" class="cls-3" d="M960,1936.866H972.49" transform="translate(-949.499 -1919.651)"/>
+    <path id="Path_138" data-name="Path 138" class="cls-3" d="M454.3,1952.016h8.124" transform="translate(-443.803 -1932.167)"/>
+    <path id="Path_142" data-name="Path 142" class="cls-3" d="M959.491,1934.875h3" transform="translate(-938.991 -1915.026)"/>
+  </g>
+</svg>

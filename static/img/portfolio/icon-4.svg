@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icons" transform="translate(0)">
+    <g id="Rectangle_25" data-name="Rectangle 25" class="cls-1">
+      <rect class="cls-3" width="45" height="50"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="44" height="49"/>
+    </g>
+    <line id="Line_16" data-name="Line 16" class="cls-2" x2="44" transform="translate(0.5 9.5)"/>
+    <g id="Rectangle_26" data-name="Rectangle 26" class="cls-1" transform="translate(30 43)">
+      <rect class="cls-3" width="13" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="12" height="4"/>
+    </g>
+    <g id="Rectangle_27" data-name="Rectangle 27" class="cls-1" transform="translate(2 12)">
+      <rect class="cls-3" width="23" height="7"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="22" height="6"/>
+    </g>
+    <g id="Rectangle_28" data-name="Rectangle 28" class="cls-1" transform="translate(26 12)">
+      <rect class="cls-3" width="17" height="7"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="16" height="6"/>
+    </g>
+    <g id="Rectangle_29" data-name="Rectangle 29" class="cls-1" transform="translate(2 22)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_30" data-name="Rectangle 30" class="cls-1" transform="translate(9 22)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_31" data-name="Rectangle 31" class="cls-1" transform="translate(16 22)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_32" data-name="Rectangle 32" class="cls-1" transform="translate(23 22)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_33" data-name="Rectangle 33" class="cls-1" transform="translate(2 29)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_34" data-name="Rectangle 34" class="cls-1" transform="translate(9 29)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_35" data-name="Rectangle 35" class="cls-1" transform="translate(16 29)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_36" data-name="Rectangle 36" class="cls-1" transform="translate(23 29)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_37" data-name="Rectangle 37" class="cls-1" transform="translate(2 36)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_38" data-name="Rectangle 38" class="cls-1" transform="translate(9 36)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_39" data-name="Rectangle 39" class="cls-1" transform="translate(16 36)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_40" data-name="Rectangle 40" class="cls-1" transform="translate(23 36)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_41" data-name="Rectangle 41" class="cls-1" transform="translate(2 43)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_42" data-name="Rectangle 42" class="cls-1" transform="translate(9 43)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_43" data-name="Rectangle 43" class="cls-1" transform="translate(16 43)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_44" data-name="Rectangle 44" class="cls-1" transform="translate(23 43)">
+      <rect class="cls-3" width="5" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="4" height="4"/>
+    </g>
+    <g id="Rectangle_45" data-name="Rectangle 45" class="cls-1" transform="translate(30 36)">
+      <rect class="cls-3" width="13" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="12" height="4"/>
+    </g>
+    <g id="Rectangle_46" data-name="Rectangle 46" class="cls-1" transform="translate(30 29)">
+      <rect class="cls-3" width="13" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="12" height="4"/>
+    </g>
+    <g id="Rectangle_47" data-name="Rectangle 47" class="cls-1" transform="translate(30 22)">
+      <rect class="cls-3" width="13" height="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="12" height="4"/>
+    </g>
+  </g>
+</svg>

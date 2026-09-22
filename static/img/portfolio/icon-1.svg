@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.744 47.497">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="icon" transform="translate(0.5 0.5)">
+    <line id="Line_5" data-name="Line 5" class="cls-1" y2="10" transform="translate(1.661 36.497)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-1" y2="20" transform="translate(11.661 26.497)"/>
+    <line id="Line_7" data-name="Line 7" class="cls-1" y2="25" transform="translate(21.661 21.497)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-1" y2="25" transform="translate(31.661 21.497)"/>
+    <line id="Line_9" data-name="Line 9" class="cls-1" y2="33" transform="translate(41.661 13.497)"/>
+    <line id="Line_10" data-name="Line 10" class="cls-1" y2="27" transform="translate(51.661 19.497)"/>
+    <line id="Line_11" data-name="Line 11" class="cls-1" y2="35" transform="translate(61.661 11.497)"/>
+    <path id="Path_131" data-name="Path 131" class="cls-2" d="M2879.839,1985.056l21.428-16.249,8.734,4.976,11.069-8.53,10.46,5.585,10.054-8.835" transform="translate(-2879.839 -1962.003)"/>
+  </g>
+</svg>
