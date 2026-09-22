@@ -1,0 +1,13 @@
+DirectoryIndex index.html
+
+# Simple security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Block access to backup and source files
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|htaccess|htpasswd)$">
+    Require all denied
+</FilesMatch>

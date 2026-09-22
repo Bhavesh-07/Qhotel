@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Qhotels Site Map{% endblock %}
+
+{% block extra_css %}
+<style type="text/css">
+    #top-sitemap {background-color: #b1d1e8;font-size: 16px;padding-bottom: 40px;}
+    .sitemap-nav {
+        font-size: 24px;margin: 0px 30px 0px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background-color: #f3f3f3;
+        color: #666;
+        box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1;
+    }
+    #cont-sitemap {
+        position: relative;
+        border-radius: 6px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        background: #f3f3f3;
+        margin: -20px 30px 40px 30px;
+        padding: 20px;
+    }
+    .sitemap-list {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .lhead {
+        background: #ddd;
+        padding: 10px;
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+    .lpage {
+        border-bottom: #ddd 1px solid;
+        padding: 10px;
+    }
+    .lpage a {
+        color: #0180AF;
+        text-decoration: none;
+    }
+    .lpage a:hover {
+        text-decoration: underline;
+    }
+    .last-page {
+        border: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="top-sitemap">
+    <div class="sitemap-nav">Q Hotels Site Map</div>
+</div>
+<div id="cont-sitemap">
+    <ul class="sitemap-list level-0">
+        <li class="lhead">/ Pages</li>
+        <li class="lpage"><a href="/" title="Q-Hotels">Home</a></li>
+        <li class="lpage"><a href="/about" title="Q-Hotels | About us">About Us</a></li>
+        <li class="lpage"><a href="/team" title="Q-Hotels | Team">Team</a></li>
+        <li class="lpage"><a href="https://qhotels.isolvedhire.com/pages/jobsbylocation" target="_blank" title="Q-Hotels | Careers">Careers</a></li>
+        <li class="lpage"><a href="/news" title="Q-Hotels | News">News</a></li>
+        <li class="lpage"><a href="/service" title="Q-Hotels | Services">Services</a></li>
+        <li class="lpage"><a href="/sales-and-marketing" title="Q-Hotels | Services">Sales and Marketing</a></li>
+        <li class="lpage"><a href="/operations" title="Q-Hotels | Services">Operations</a></li>
+        <li class="lpage"><a href="/technology" title="Q-Hotels | Services">Technology and IT</a></li>
+        <li class="lpage"><a href="/accounting" title="Q-Hotels | Services">Accounting</a></li>
+        <li class="lpage"><a href="/construction-and-pip-management" title="Q-Hotels | Services">Development, PIP and Construction</a></li>
+        <li class="lpage"><a href="/detailed-list-of-services" title="Q-Hotels | Services">Detailed List of Services</a></li>
+        <li class="lpage"><a href="/portfolio" title="Q-Hotels | PortFolio">Portfolio</a></li>
+        <li class="lpage"><a href="/investment" title="Q-Hotels | Investment">Investment</a></li>
+        <li class="lpage last-page"><a href="/contact" title="Q-Hotels | Contact">Get In Touch</a></li>
+    </ul>
+</div>
+{% endblock %}

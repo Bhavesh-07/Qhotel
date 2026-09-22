@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule" 
+           scriptProcessor="C:\PATH_TO_PYTHON\python.exe|C:\PATH_TO_WFASTCGI\wfastcgi.py" 
+           resourceType="Unspecified" requireAccess="Script" />
+    </handlers>
+  </system.webServer>
+  <appSettings>
+    <add key="PYTHONPATH" value="C:\PATH_TO_YOUR_PROJECT" />
+    <add key="WSGI_HANDLER" value="app.app" />
+  </appSettings>
+</configuration>

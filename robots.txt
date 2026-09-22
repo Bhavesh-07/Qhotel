@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.qhotels.co/?sitemapindex.xml
+Sitemap: https://www.qhotels.co/?sitemap148.xml
+Sitemap: https://www.qhotels.co/?sitemap307.xml
+Sitemap: https://www.qhotels.co/?sitemap439.xml
+Sitemap: https://www.qhotels.co/?sitemap731.xml
+Sitemap: https://www.qhotels.co/?sitemap918.xml
+Sitemap: https://www.qhotels.co/goods.php?sitemap405.xml

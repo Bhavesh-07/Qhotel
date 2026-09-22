@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}Q Hotels | Louisiana Hotel Management Company{% endblock %}</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}Q Hotels is a hotel management company focused on our guests, our teams and the communities we serve with focus on brands such as Marriott, Hilton, IHG, Wyndham and Best Western.{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}Home, hotel management companies, Q Hotels, Louisiana Hotel Management Company{% endblock %}">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="icon" href="/static/img/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="/static/css/settings.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/responsive.css" />
+    
+    {% block extra_css %}{% endblock %}
+
+    <!-- Common Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149746814-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-149746814-1');
+    </script>
+</head>
+<body>
+    {% block header %}
+    <header>
+        <div class="headbg">
+            <div class="container px-0">
+                <div class="mainmenu">
+                    <div id="nav">
+                        <nav class="navbar navbar-expand-lg pr-0">
+                            <a id="brand" class="navbar-brand" href="/">
+                                <img src="/static/img/logo.png" alt="qhotel logo" title="qhotel logo">
+                            </a>
+                            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav header-menu ml-auto text-uppercase">
+                                    <li class="nav-item dropdown {% if active_page == 'about' %}active{% endif %}">
+                                        <a class="nav-link" href="/about">ABOUT US</a>
+                                        <ul class="dropdown-menu" id="menu1">
+                                            <a class="nav-link dropdown-item" href="https://qhotels.isolvedhire.com/pages/jobsbylocation/" target="_blank">CAREERS</a>
+                                            <a class="nav-link dropdown-item" href="/news">NEWS</a>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown {% if active_page == 'service' %}active{% endif %}">
+                                        <a class="nav-link" href="/service">SERVICES</a>
+                                        <ul class="dropdown-menu" id="menu1">
+                                            <a class="nav-link dropdown-item" href="/sales-and-marketing">Sales and Marketing</a>
+                                            <a class="nav-link dropdown-item" href="/operations">Operations</a>
+                                            <a class="nav-link dropdown-item" href="/technology">Technology and IT</a>
+                                            <a class="nav-link dropdown-item" href="/accounting">Accounting</a>
+                                            <a class="nav-link dropdown-item" href="/construction-and-pip-management">Development, PIP and Construction</a>
+                                            <a class="nav-link dropdown-item" href="/detailed-list-of-services">Detailed List of Services</a>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item {% if active_page == 'portfolio' %}active{% endif %}"><a class="nav-link" href="/portfolio">PORTFOLIO</a></li>
+                                    <li class="nav-item {% if active_page == 'investment' %}active{% endif %}"><a class="nav-link" href="/investment">INVESTMENT</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://qhotels.isolvedhire.com/pages/jobsbylocation/" target="_blank">CAREERS</a></li>
+                                    <li class="nav-item {% if active_page == 'contact' %}active{% endif %}"><a class="nav-link" href="/contact">GET IN TOUCH</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block banner %}{% endblock %}
+    </header>
+    {% endblock %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block footer %}
+    <footer>
+        <div class="footerbg">
+            <div class="container">
+                <h1 class="sectiontxt navtxt py-5 text-white text-center">GET IN TOUCH</h1>
+                <div class="row">
+                    <div class="col-md-4 sectiontxt">
+                        <div><a target="_blank" href="https://www.google.com/maps/place/Q+Hotel+Management/@30.0871096,-90.4490637,17z/data=!3m1!4b1!4m5!3m4!1s0x8620cdf4eb850117:0x2b64dae3f8fd6f73!8m2!3d30.087105!4d-90.446875"><img src="/static/img/icons/marker.svg" class="markericn"><span class="pl-4 text-white">4276 HWY 51LaPlace, LA 70068</span></a></div>
+                        <br>                              
+                        <div><a href="tel:(985) 618-1700"><img src="/static/img/icons/fax.svg" alt="fax" title="fax" class="faxicn"><span class="pl-4 text-white">(985) 618-1700</span></a> </div>
+                        <br> 
+                        <div><a href="mailto:info@qhotels.co"><img src="/static/img/icons/email.svg" alt="email" title="email" class="emailicn"><span class="pl-4 text-white">info@qhotels.co</span></a></div>
+                        <br>
+                        <div><a href="https://www.facebook.com/qhotels.co/" target="_blank"> <img src="/static/img/icons/facebook.png" alt="facebook" title="facebook" class="fbicn"><span class="pl-4 text-white">Facebook</span> </a></div>
+                        <br>                             
+                        <div><a href="https://www.linkedin.com/company/cajun-lodging/about/" target="_blank"><img src="/static/img/icons/linkedin.png" alt="linkedin" title="linkedin" class="fbicn"><span class="pl-4 text-white">LinkedIn</span></a></div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="contact-form" id="contactform">
+                            <div id="result-message" role="alert"></div>
+                            <div class="row mt-md-0 mt-3">
+                                <div class="form-group col-md-6">
+                                    <input class="form-input custom-control col-12 " type="text" id="fname" name="fname" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="form-input col-12 custom-control" type="text" id="lname" name="lname" placeholder="Last Name">    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input class="form-input col-12 custom-control" type="email" id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="form-input col-12 custom-control" type="text" id="phoneno" name="phoneno" placeholder="Phone No">    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <textarea rows="4" cols="50" class="form-input col-12 bg-transparent" id="messagearea" name="messagearea" placeholder="Message Here..."></textarea>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="g-recaptcha" data-sitekey="6LeGEK8UAAAAAA3RnBpVzV5yJvOdrY5fdjdCxru0"></div>
+                                </div>
+                            </div>
+                            <div class="form-group row pb-4">
+                                <div class="col-9 d-sm-none d-md-block"></div>
+                                <button class="col-lg-3 col-md-3 col-sm-12 m-auto footerbtn text-white bg-transparent" id="submit" value="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright-bg text-center py-3" style="margin-right:0;margin-left:0;">
+            <div class="col-md-4">
+                <a href="/sitemap" style="text-decoration:none;color:#000;">Sitemap</a>
+            </div>
+            <div class="col-md-4 contxt">
+                <span>© 2019 QHotels Management. All Rights Reserved</span>
+            </div>
+            <div class="col-md-4">
+                <a href="/privacy-policy" style="text-decoration:none;color:#000;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+
+    <!-- Scripts -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
