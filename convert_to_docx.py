@@ -591,13 +591,13 @@ def build_word_document():
         ("Pending", "Firewall", "Close public access to MS SQL (Port 1433 on 13.65.148.90)", "DevOps / Infrastructure"),
         ("Pending", "Firewall", "Close public access to MySQL (Port 3306 on 144.76.101.11)", "DevOps / Infrastructure"),
         ("Pending", "Network", "Disable plain FTP (Port 21) across all hosts; enforce SFTP / FTPS", "DevOps / Infrastructure"),
-        ("Done", "Web Server", "Configure 301 HTTP -> HTTPS redirection on all endpoints (Added in web.config)", "DevOps / Web Admin"),
-        ("Done", "Web Server", "Add Strict-Transport-Security (HSTS) response header in IIS (Added in web.config)", "DevOps / Web Admin"),
+        ("Pending", "Web Server", "Configure 301 HTTP -> HTTPS redirection on all endpoints", "DevOps / Server Admin"),
+        ("Pending", "Web Server", "Add Strict-Transport-Security (HSTS) response header in IIS", "DevOps / Server Admin"),
         ("Done", "Frontend", "Install Cookie Consent Banner (CMP) for analytics tracking (Added in templates/base.html)", "Web Developer"),
         ("Done", "Frontend", "Halt Google Analytics / pixel loading until user consent is granted (Google Consent Mode v2)", "Web Developer"),
         ("Done", "Frontend", "Implement Global Privacy Control (GPC) opt-out signal detection (Added in static/js/cookie-consent.js)", "Web Developer"),
         ("Done", "Footer", "Add \"Do Not Sell My Personal Information\" link in templates/base.html (Added in templates/base.html)", "Web Developer / Legal"),
-        ("Done", "Legal", "Update templates/privacy-policy.html with current date & disclosures (Updated in templates/privacy-policy.html)", "Legal / Web Content")
+        ("Done", "Legal", "Update templates/privacy-policy.html with current date & disclosures (Updated in templates/privacy-policy.html)", "Legal / Web Developer")
     ]
     
     table_chk = doc.add_table(rows=11, cols=4)
@@ -658,8 +658,13 @@ def build_word_document():
                 format_run(r, font_name='Segoe UI', size_pt=8.5, bold=False, color_rgb=(0x47, 0x55, 0x69))
 
     output_path = r"c:\wamp64\www\qhotel\RISK_REMEDIATION_PLAN.docx"
-    doc.save(output_path)
-    print(f"Successfully created: {output_path}")
+    try:
+        doc.save(output_path)
+        print(f"Successfully created: {output_path}")
+    except PermissionError:
+        alt_path = r"c:\wamp64\www\qhotel\RISK_REMEDIATION_PLAN_UPDATED.docx"
+        doc.save(alt_path)
+        print(f"File locked by Word. Successfully saved to: {alt_path}")
 
 if __name__ == "__main__":
     build_word_document()
