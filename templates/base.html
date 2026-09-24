@@ -17,6 +17,7 @@
     <link rel="icon" href="/static/img/favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="/static/css/cookie-consent.css">
     <link rel="stylesheet" href="/static/css/settings.css" />
     <link rel="stylesheet" href="/static/css/font-awesome.css">
     <link rel="stylesheet" href="/static/css/responsive.css" />
@@ -27,11 +28,19 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149746814-1"></script>
+    <!-- Google Consent Mode v2 Default Configuration -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'wait_for_update': 500
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149746814-1"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'UA-149746814-1');
     </script>
@@ -143,23 +152,41 @@
             </div>
         </div>
         <div class="row copyright-bg text-center py-3" style="margin-right:0;margin-left:0;">
-            <div class="col-md-4">
+            <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
                 <a href="/sitemap" style="text-decoration:none;color:#000;">Sitemap</a>
             </div>
-            <div class="col-md-4 contxt">
-                <span>© 2019 QHotels Management. All Rights Reserved</span>
+            <div class="col-lg-3 col-md-6 contxt mb-2 mb-lg-0">
+                <span>© 2026 QHotels Management. All Rights Reserved</span>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
                 <a href="/privacy-policy" style="text-decoration:none;color:#000;">Privacy Policy</a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
+                <a href="#" id="open-cookie-preferences" style="text-decoration:none;color:#000;font-weight:600;">Do Not Sell or Share My Personal Information</a>
             </div>
         </div>
     </footer>
     {% endblock %}
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-consent-banner" role="region" aria-label="Cookie consent">
+        <div class="cookie-consent-container">
+            <p class="cookie-consent-text">
+                We use cookies and similar technologies to optimize website functionality and analyze website traffic. 
+                Review our <a href="/privacy-policy">Privacy Policy</a> to learn more about how we protect your personal data.
+            </p>
+            <div class="cookie-consent-buttons">
+                <button id="cookie-consent-accept" class="cookie-btn cookie-btn-accept" type="button">Accept All</button>
+                <button id="cookie-consent-reject" class="cookie-btn cookie-btn-reject" type="button">Reject Non-Essential</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
+    <script src="/static/js/cookie-consent.js"></script>
     
     {% block extra_js %}{% endblock %}
 </body>
