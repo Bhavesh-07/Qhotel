@@ -588,11 +588,11 @@ def build_word_document():
     format_run(r_ci, font_name='Segoe UI', size_pt=10, bold=False, color_rgb=(0x33, 0x41, 0x55))
     
     checklist_data = [
-        ("Pending", "Firewall", "Close public access to MS SQL (Port 1433 on 13.65.148.90)", "DevOps / Infrastructure"),
-        ("Pending", "Firewall", "Close public access to MySQL (Port 3306 on 144.76.101.11)", "DevOps / Infrastructure"),
-        ("Pending", "Network", "Disable plain FTP (Port 21) across all hosts; enforce SFTP / FTPS", "DevOps / Infrastructure"),
-        ("Pending", "Web Server", "Configure 301 HTTP -> HTTPS redirection on all endpoints", "DevOps / Server Admin"),
-        ("Pending", "Web Server", "Add Strict-Transport-Security (HSTS) response header in IIS", "DevOps / Server Admin"),
+        ("Done", "Firewall", "Close public access to MS SQL (Port 1433 on 13.65.148.90)", "DevOps / Infrastructure"),
+        ("Done", "Firewall", "Close public access to MySQL (Port 3306 on 144.76.101.11)", "DevOps / Infrastructure"),
+        ("Done", "Network", "Disable plain FTP (Port 21) across all hosts; enforce SFTP / FTPS", "DevOps / Infrastructure"),
+        ("Done", "Web Server", "Configure 301 HTTP -> HTTPS redirection on all endpoints (Added in web.config)", "DevOps / Server Admin"),
+        ("Done", "Web Server", "Add Strict-Transport-Security (HSTS) response header in IIS (Added in web.config)", "DevOps / Server Admin"),
         ("Done", "Frontend", "Install Cookie Consent Banner (CMP) for analytics tracking (Added in templates/base.html)", "Web Developer"),
         ("Done", "Frontend", "Halt Google Analytics / pixel loading until user consent is granted (Google Consent Mode v2)", "Web Developer"),
         ("Done", "Frontend", "Implement Global Privacy Control (GPC) opt-out signal detection (Added in static/js/cookie-consent.js)", "Web Developer"),
