@@ -175,16 +175,7 @@
 {% endblock %}
 
 {% block extra_js %}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsR8dqbqdt78-tUBDI78w4YrNTxJr4QEs&callback=initMap"></script>
 <script>
-    function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: {lat: 30.040840, lng: -90.462791}
-        });
-        setMarkers(map, hotels);
-    }
-    
     var hotels = [
         ['Donaldsonville, La.', 30.100350, -90.961693, '2280 Buisness Park Dr. Donaldsonville, La. 70346' ],
         ['TownePlace Suites by Marriott', 30.069990, -90.478070, '4281 Hwy 51 LaPlace, La. 70068 '],
@@ -195,7 +186,7 @@
 
     function setMarkers(map) {
         var image = {
-            url: 'http://qhotels.logicexpress.net/img/mark.png',
+            url: '/static/img/mark.png',
             size: new google.maps.Size(85, 90),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(0, 32)
@@ -209,6 +200,16 @@
                 title: hotel[0]
             });
         }
+    }
+
+    function initMap() {
+        var mapEl = document.getElementById('map');
+        if (!mapEl) return;
+        var map = new google.maps.Map(mapEl, {
+            zoom: 12,
+            center: {lat: 30.040840, lng: -90.462791}
+        });
+        setMarkers(map);
     }
 
     $(document).ready(function(){
@@ -225,4 +226,5 @@
         });
     });
 </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsR8dqbqdt78-tUBDI78w4YrNTxJr4QEs&callback=initMap"></script>
 {% endblock %}

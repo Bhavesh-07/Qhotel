@@ -1,6 +1,6 @@
 /**
  * Q Hotels - Privacy & Cookie Consent Management
- * Implements: Google Consent Mode v2, Global Privacy Control (GPC), and CCPA opt-out preferences
+ * Implements: Google Consent Mode v2, Global Privacy Control (GPC), and CCPA/CPRA opt-out preferences
  */
 (function () {
     var CONSENT_KEY = 'qhotels_cookie_consent';
@@ -9,7 +9,8 @@
         return (
             window.navigator.globalPrivacyControl === true ||
             window.navigator.globalPrivacyControl === '1' ||
-            window.globalPrivacyControl === true
+            window.globalPrivacyControl === true ||
+            (typeof document !== 'undefined' && document.globalPrivacyControl === true)
         );
     }
 
@@ -17,7 +18,9 @@
         if (typeof window.gtag === 'function') {
             window.gtag('consent', 'update', {
                 'analytics_storage': status === 'accepted' ? 'granted' : 'denied',
-                'ad_storage': status === 'accepted' ? 'granted' : 'denied'
+                'ad_storage': status === 'accepted' ? 'granted' : 'denied',
+                'ad_user_data': status === 'accepted' ? 'granted' : 'denied',
+                'ad_personalization': status === 'accepted' ? 'granted' : 'denied'
             });
         }
     }
@@ -61,6 +64,14 @@
     } else if (storedConsent === 'rejected') {
         updateGoogleConsent('rejected');
     }
+
+    // Expose utility to window
+    window.QHotelsPrivacy = {
+        checkGpc: checkGpcSignal,
+        setConsent: setConsent,
+        showBanner: showBanner,
+        hideBanner: hideBanner
+    };
 
     document.addEventListener('DOMContentLoaded', function () {
         var banner = document.getElementById('cookie-consent-banner');

@@ -31,6 +31,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
+    <!-- Privacy & Cookie Consent Initialization -->
+    <script src="/static/js/cookie-consent.js"></script>
     <!-- Google Consent Mode v2 Default Configuration -->
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -38,6 +40,8 @@
         gtag('consent', 'default', {
             'analytics_storage': 'denied',
             'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
             'wait_for_update': 500
         });
     </script>
@@ -186,32 +190,31 @@
             </div>
         </div>
         <div class="row copyright-bg text-center py-3" style="margin-right:0;margin-left:0;">
-            <div class="col-md-4">
+            <div class="col-md-3 col-sm-6 mb-2 mb-md-0">
                 <a href="/sitemap" style="text-decoration:none;color:#000;">Sitemap</a>
             </div>
-            <div class="col-md-4 contxt">
-                <span>© 2026 QHotels Management. All Rights Reserved</span>
+            <div class="col-md-3 col-sm-6 mb-2 mb-md-0">
+                <a href="#" class="open-cookie-preferences" id="open-cookie-preferences" style="text-decoration:none;color:#000;">Do Not Sell or Share My Personal Information</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 col-sm-6 mb-2 mb-md-0">
                 <a href="/privacy-policy" style="text-decoration:none;color:#000;">Privacy Policy</a>
+            </div>
+            <div class="col-md-3 col-sm-6 contxt">
+                <span>© 2026 QHotels Management. All Rights Reserved</span>
             </div>
         </div>
     </footer>
     {% endblock %}
 
     <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner" class="cookie-consent-banner" role="region" aria-label="Cookie consent">
+    <div id="cookie-consent-banner" class="cookie-consent-banner" role="dialog" aria-modal="false" aria-label="Cookie and Privacy Consent" data-cmp="qhotels-consent-manager" data-nosnippet="true">
         <div class="cookie-consent-container">
             <p class="cookie-consent-text">
-                We use cookies and similar technologies to optimize website functionality and analyze website traffic.
-                Review our <a href="/privacy-policy">Privacy Policy</a> to learn more about how we protect your personal
-                data.
+                We use cookies and similar technologies to optimize website functionality, respect your privacy choices, and analyze traffic. Under applicable privacy laws (such as CCPA/CPRA), you have the right to opt out of data sharing. Review our <a href="/privacy-policy">Privacy Policy</a> or adjust your preferences below.
             </p>
             <div class="cookie-consent-buttons">
-                <button id="cookie-consent-accept" class="cookie-btn cookie-btn-accept" type="button">Accept
-                    All</button>
-                <button id="cookie-consent-reject" class="cookie-btn cookie-btn-reject" type="button">Reject
-                    Non-Essential</button>
+                <button id="cookie-consent-accept" class="cookie-btn cookie-btn-accept" type="button" aria-label="Accept all cookies">Accept All</button>
+                <button id="cookie-consent-reject" class="cookie-btn cookie-btn-reject" type="button" aria-label="Reject non-essential cookies">Reject Non-Essential</button>
             </div>
         </div>
     </div>
@@ -220,7 +223,6 @@
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
-    <script src="/static/js/cookie-consent.js"></script>
 
     {% block extra_js %}{% endblock %}
 </body>
